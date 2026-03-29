@@ -443,6 +443,14 @@ import { PersonalInfo, ContactForm } from '../../models/portfolio.model';
     }
 
     @media (max-width: 768px) {
+      .contact {
+        padding: 60px 0;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
       .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -450,15 +458,85 @@ import { PersonalInfo, ContactForm } from '../../models/portfolio.model';
 
       .form-row {
         grid-template-columns: 1fr;
+        gap: 0;
       }
 
       .cta-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
       }
 
       .section-title {
         font-size: 2rem;
+      }
+
+      .contact-form-container {
+        padding: 1.5rem;
+      }
+
+      .contact-method {
+        padding: 0.75rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+      }
+
+      .contact-method i {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+      }
+
+      .contact-cta {
+        padding: 2rem 1rem;
+      }
+
+      .contact-cta h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact {
+        padding: 40px 0;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .contact-form-container {
+        padding: 1rem;
+      }
+
+      .contact-form h3 {
+        font-size: 1.3rem;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+      }
+
+      .submit-btn {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+      }
+
+      .contact-cta h3 {
+        font-size: 1.3rem;
+      }
+
+      .contact-cta p {
+        font-size: 0.9rem;
       }
     }
   `]

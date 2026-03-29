@@ -307,17 +307,84 @@ import { Project } from '../../models/portfolio.model';
     }
 
     @media (max-width: 768px) {
+      .projects {
+        padding: 60px 0;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
       .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .project-card {
+        margin: 0 auto;
+        max-width: 400px;
       }
 
       .projects-filter {
         flex-direction: column;
         align-items: center;
+        gap: 0.5rem;
+      }
+
+      .filter-btn {
+        width: 200px;
+        text-align: center;
       }
 
       .section-title {
         font-size: 2rem;
+      }
+
+      .project-image {
+        height: 200px;
+      }
+
+      .project-content {
+        padding: 1rem;
+      }
+
+      .project-title {
+        font-size: 1.1rem;
+      }
+
+      .project-description {
+        font-size: 0.9rem;
+      }
+
+      .projects-cta {
+        padding: 2rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .projects {
+        padding: 40px 0;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .project-card {
+        max-width: 100%;
+      }
+
+      .project-image {
+        height: 180px;
+      }
+
+      .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+      }
+
+      .projects-cta p {
+        font-size: 1rem;
       }
     }
   `]

@@ -234,17 +234,65 @@ import { Skill } from '../../models/portfolio.model';
     }
 
     @media (max-width: 768px) {
+      .skills {
+        padding: 60px 0;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
       .skills-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .skill-item {
+        padding: 1rem;
       }
 
       .skills-chart {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 1.5rem;
       }
 
       .section-title {
         font-size: 2rem;
+      }
+
+      .category-title {
+        font-size: 1.3rem;
+      }
+
+      .skills-visual h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skills {
+        padding: 40px 0;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .skills-chart {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .skill-circle {
+        transform: scale(0.9);
+      }
+
+      .category-title {
+        font-size: 1.2rem;
+      }
+
+      .skills-visual h3 {
+        font-size: 1.3rem;
       }
     }
   `]

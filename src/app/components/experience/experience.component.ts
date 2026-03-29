@@ -307,6 +307,14 @@ import { Experience, Education } from '../../models/portfolio.model';
     }
 
     @media (max-width: 768px) {
+      .experience {
+        padding: 60px 0;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
       .timeline-container {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -314,6 +322,7 @@ import { Experience, Education } from '../../models/portfolio.model';
 
       .achievements-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
       }
 
       .section-title {
@@ -326,6 +335,58 @@ import { Experience, Education } from '../../models/portfolio.model';
 
       .timeline-marker {
         left: -1.5rem;
+      }
+
+      .timeline-content {
+        padding: 1rem;
+      }
+
+      .position,
+      .degree {
+        font-size: 1.1rem;
+      }
+
+      .achievement-item {
+        padding: 1.5rem;
+      }
+
+      .achievement-item i {
+        font-size: 2rem;
+      }
+
+      .achievement-item h4 {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .experience {
+        padding: 40px 0;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .timeline-title {
+        font-size: 1.3rem;
+      }
+
+      .achievements h3 {
+        font-size: 1.5rem;
+      }
+
+      .timeline-content {
+        padding: 0.75rem;
+      }
+
+      .achievement-item {
+        padding: 1rem;
+      }
+
+      .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
       }
     }
   `]

@@ -230,6 +230,14 @@ import { PersonalInfo, SocialLink } from '../../models/portfolio.model';
     }
 
     @media (max-width: 768px) {
+      .footer {
+        padding: 3rem 0 1.5rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
       .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -239,6 +247,7 @@ import { PersonalInfo, SocialLink } from '../../models/portfolio.model';
       .footer-bottom-content {
         flex-direction: column;
         text-align: center;
+        gap: 0.5rem;
       }
 
       .contact-info p {
@@ -248,12 +257,52 @@ import { PersonalInfo, SocialLink } from '../../models/portfolio.model';
       .social-links {
         justify-content: center;
       }
+
+      .footer-section h3 {
+        font-size: 1.3rem;
+      }
+
+      .footer-section h4 {
+        font-size: 1.1rem;
+      }
+
+      .footer-bio {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+      }
     }
 
     @media (max-width: 1024px) and (min-width: 769px) {
       .footer-content {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer {
+        padding: 2rem 0 1rem;
+      }
+
+      .footer-section h3 {
+        font-size: 1.2rem;
+      }
+
+      .footer-section h4 {
+        font-size: 1rem;
+      }
+
+      .social-link {
+        width: 35px;
+        height: 35px;
+      }
+
+      .footer-bio {
+        font-size: 0.8rem;
+      }
+
+      .footer-bottom-content p {
+        font-size: 0.8rem;
       }
     }
   `]
